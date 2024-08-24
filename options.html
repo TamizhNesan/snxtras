@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ServiceNow Instances</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="options_styles.css">
+</head>
+<body>
+    <div id="options-content">
+        <h1>Manage ServiceNow Instances</h1>
+        <div class="input-group">
+            <input type="text" id="instance-name" placeholder="Enter instance name" />
+            <input type="text" id="instance-display-name" placeholder="Enter instance display name" />
+            <button id="add-instance" class="action-btn">Add</button>
+            <button id="remove-all" class="action-btn">Remove All</button>
+        </div>
+        <div id="instance-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Instance Name</th>
+                        <th>Instance Display Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- List of instances will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

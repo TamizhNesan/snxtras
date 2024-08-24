@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNXtras</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="popup-content">
+        <!-- Centered and enlarged icon -->
+        <img src="icons/iconsnxtras.png" alt="SNXtras Logo" id="logo">
+        
+        <h1>Select an Instance</h1>
+        <select id="instance-select">
+            <!-- Instances will be dynamically populated here -->
+        </select>
+        
+        <!-- Buttons with icons and semi-transparent styling -->
+        <button id="switch-instance" class="btn btn-semi-transparent">
+            <i class="fa fa-exchange"></i> Switch Instance
+        </button>
+        
+        <button id="cancel-tranx" class="btn btn-semi-transparent">
+            <i class="fa fa-times"></i> Cancel Transaction
+        </button>
+        
+        <button id="impersonate" class="btn btn-semi-transparent">
+            <i class="fa fa-user"></i> Impersonate User
+        </button>
+        <button id="open-options" class="btn btn-semi-transparent">
+            <i class="fas fa-cog"></i> Manage Instances
+        </button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

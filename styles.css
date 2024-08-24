@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Import Google Font */
+
+:root {
+    --primary-color: 111, 76, 255; /* violet */
+    --secondary-color: 1, 134, 218; /* blue */
+    --text-color: 255, 255, 255; /* white */
+    --background-color: 255, 255, 255; /* white */
+    --hover-color: 85, 128, 230; /* light blue */
+    --border-color: rgba(0, 0, 0, 0.2); /* thin border */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(var(--background-color));
+    color: rgb(var(--text-color));
+    padding: 1rem;
+    text-align: center;
+}
+
+#popup-content {
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(var(--background-color)); /* white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1); /* thin border */
+}
+
+h1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #333; /* black */
+}
+
+select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid var(--border-color); /* thin border */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: rgb(var(--background-color)); /* white */
+    color: #333; /* black text */
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+button i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Adjust icon size */
+    color: #333; /* Icon color */
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(var(--hover-color)); /* light blue */
+    color: rgb(var(--background-color)); /* white text */
+}
+
+button:active {
+    background-color: rgb(var(--secondary-color)); /* blue */
+    color: rgb(var(--text-color)); /* white */
+    opacity: 0.8;
+}
+
+.btn-glow:hover {
+    box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+}
+
+/* Centering and enlarging the image at the top */
+#popup-content img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px; /* Larger size */
+    height: auto;
+}
